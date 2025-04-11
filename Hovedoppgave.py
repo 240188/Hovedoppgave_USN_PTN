@@ -61,7 +61,6 @@ print ("Lengste samtale var:",u_dag[Lengste_samtale_index],"kl", kl_slett[Lengst
 
 #totalt antall hendvendelser
 antal_hendvendelser = len(u_dag)
-print(antal_hendvendelser)
 
 
 #bruker pd mean for enkelt gjennomsnitt.
@@ -71,13 +70,17 @@ tot_sek = Varighet_snitt.total_seconds()
 timer = int(tot_sek // 3600)
 minuter = int((tot_sek % 3600) // 60)
 sek = int(tot_sek % 60)
-    
+
+print("Totalt antall hendvendelser:",antal_hendvendelser,"stk")    
 print(f"Gjennomsnitt tid (hh:mm:ss): {timer:02}:{minuter:02}:{sek:02}")
     
-
-    
-
 #del e
+
+
+#kl 08-10
+
+
+
 
 #e) Supportvaktene i MORSE er delt inn i 2-timers bolker: kl 08-10, kl 10-12, kl 12-14 og kl
 #14-16. Skriv et program som finner det totale antall henvendelser supportavdelingen mottok
